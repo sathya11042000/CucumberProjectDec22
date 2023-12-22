@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="90.17505">
+    <testcase classname="To validate login funcnality of facebook application" name="To valdate invalide username and valide password" time="13.178389">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the fb url.......................passed
+When To pass the value in emailfied.........................................passed
+And To pass the value in passwordfied.......................................passed
+And To click the login button...............................................passed
+Then To close the chrome browser............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login funcnality of facebook application" name="To valdate valide username and valide password" time="10.873525">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the fb url.......................passed
+When User has To pass the value "java123@gmail.com" in email field..........passed
+And User has To pass the value "55555" in password field....................passed
+And User has To click the login button......................................passed
+Then User has To close the chrome browser...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login funcnality of facebook application" name="To valdate valide username and valide password 2" time="14.526848">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the fb url.......................passed
+When User has To pass the value "selenium123@gmail.com" in email field......passed
+And User has To pass the value "7777777" in password field..................passed
+And User has To click the login button......................................passed
+Then User has To close the chrome browser...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login funcnality of facebook application" name="To valdate valide username and valide password 3" time="11.869053">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the fb url.......................passed
+When User has To pass the value "python123@gmail.com" in email field........passed
+And User has To pass the value "12345678" in password field.................passed
+And User has To click the login button......................................passed
+Then User has To close the chrome browser...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login funcnality of facebook application" name="To valdate valide username and valide password 4" time="12.231036">
+        <system-out>
+            <![CDATA[Given To launch the chrome browser and hit the fb url.......................passed
+When User has To pass the value "framework123@gmail.com" in email field.....passed
+And User has To pass the value "99999999" in password field.................passed
+And User has To click the login button......................................passed
+Then User has To close the chrome browser...................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login funcnality of amazon application" name="To valdate positive username and positive password" time="12.63366">
+        <system-out>
+            <![CDATA[Given Launch the chrome browser.............................................passed
+When pass the value in emailfied............................................passed
+And click the continue button...............................................passed
+And pass the value in passwordfied..........................................passed
+And click singin button.....................................................passed
+Then close the chrome browser...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="To validate login funcnality of amazon application" name="valdate positive username and nagative password" time="14.862539">
+        <failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.step.AmazonDefinition.to_pass_the_value_in_password_field(AmazonDefinition.java:75)&#13;&#10;&#9;at ✽.To pass the value in password field(file:src/test/resources/FeatureFile/02amazon.feature:19)&#13;&#10;">
+            <![CDATA[Given Launch the chrome browser.............................................passed
+When To pass the value in emailfied or phno.................................passed
+And To click the continue btn...............................................passed
+And To pass the value in password field.....................................failed
+And To click sing in button.................................................skipped
+Then To close the  browser..................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.step.AmazonDefinition.to_pass_the_value_in_password_field(AmazonDefinition.java:75)
+	at ✽.To pass the value in password field(file:src/test/resources/FeatureFile/02amazon.feature:19)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
